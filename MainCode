@@ -1,1 +1,20 @@
+from scipy.spatial import distance
+from imutils import face_utils
+from pygame import mixer
+import imutils
+import dlib  #For Pre trained model
+import cv2
 
+mixer.init()
+mixer.music.load("music.wav")
+
+def eye_aspect_ratio(eye):
+        # Calculate the Euclidean distances between specific points on the eye
+    A = distance.euclidean(eye[1], eye[5]) # Vertical distance between top and bottom points of the eye
+    B = distance.euclidean(eye[2], eye[4]) # Vertical distance between other two points of the eye
+    C = distance.euclidean(eye[0], eye[3]) # Horizontal distance between the sides of the eye
+# Calculate the Eye Aspect Ratio (EAR) using the distances
+# Compute the ratio where A and B are distances between specific landmarks on the eye (like the width or height of the eye).
+#C is the distance between two other landmarks on the eye.
+    ear = (A + B) / (2.0 * C)  
+    return ear    # Return the calculated Eye Aspect Ratio
