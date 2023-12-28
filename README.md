@@ -1,8 +1,4 @@
-# DrowseSense-Vision-Based-Driver-Drowsiness-Monitoring
-Industries rely on safe transportation, emphasizing driver well-being for road safety. Highway authorities prioritize evaluating driver drowsiness. Facial feature-based drowsiness detection innovates real-time fatigue warnings, revolutionizing safety protocols and accident reduction.
-Absolutely! Here's a concise README file for your GitHub repository:
 
----
 # DrowseSense-Vision-Based-Driver-Drowsiness-Monitoring
 
 ## Overview
